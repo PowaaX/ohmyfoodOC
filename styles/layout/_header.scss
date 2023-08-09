@@ -1,0 +1,32 @@
+header {
+    height: 3.9375rem;
+    align-items: center;
+    
+    .header__logo {
+        position: relative;
+        text-align: center;
+        padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            font-family: Shrikhand;
+        }
+}
+
+.location {
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    background-color: #EAEAEA;
+    justify-content: center;
+
+    span {
+        font-family: Roboto;
+        padding-left: 1.06rem;
+    }
+}
+
+.main__container {
+    width: 100%;
+    
+}
