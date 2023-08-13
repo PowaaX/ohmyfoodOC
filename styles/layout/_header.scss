@@ -1,17 +1,17 @@
-header {
+.header__logo {
+    width: 23.4375rem;
     height: 3.9375rem;
-    align-items: center;
-    
-    .header__logo {
-        position: relative;
-        text-align: center;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+        font-family: Shrikhand;
+        font-size: 1.875rem;
         padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        font-weight: 400;
         }
-        h1 {
-            font-family: Shrikhand;
-        }
-}
 
 .location {
     height: 3.125rem;
@@ -21,12 +21,7 @@ header {
     justify-content: center;
 
     span {
-        font-family: Roboto;
+        
         padding-left: 1.06rem;
     }
-}
-
-.main__container {
-    width: 100%;
-    
 }

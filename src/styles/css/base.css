@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
+.header__logo {
+  width: 23.4375rem;
+  height: 3.9375rem;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-family: Shrikhand;
+  font-size: 1.875rem;
+  padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
+  font-weight: 400;
+}
+
+.location {
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  background-color: #EAEAEA;
+  justify-content: center;
+}
+.location span {
+  padding-left: 1.06rem;
+}
+
+.main__container {
+  width: 100%;
+}
+.main__container .main__content {
+  text-align: center;
+  padding: 2.44rem 3.62rem 0 2.63rem;
+}
+.main__container .main__content h2 {
+  height: 4.25rem;
+}
+
+.main__p {
+  width: 19.6875rem;
+}
+
+.main__btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.69rem;
+  padding-bottom: 3.56rem;
+}
+
+.main__fonction {
+  background: var(--white);
+  width: 23.4375rem;
+  height: 27.5rem;
+}
+.main__fonction h2 {
+  padding-left: 1.25rem;
+  padding-top: 3rem;
+  padding-bottom: 1.62rem;
+}
+
+.main__restaurants {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.main__restaurants h2 {
+  padding-top: 3.37rem;
+  padding-bottom: 1.62rem;
+}
+
+.main__card {
+  display: flex;
+}
+
+.restaurants__container {
+  margin: auto;
+}
+
+.btn {
+  display: flex;
+  background: var(--button-gradient);
+  color: white;
+  border-radius: 1.5625rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 13.625rem;
+  height: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 1rem;
+}
+.btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(182deg, #9356DC 0%, #FF79DA 100%);
+}
+
+.list__content {
+  padding-left: 1.25rem;
+  list-style: none; /* Supprime les puces de la liste */
+  counter-reset: item; /* Réinitialise le compteur pour les éléments */
+  width: 20.15538rem;
+  padding-left: 2.03rem;
+}
+
+li::before {
+  display: flex;
+  content: counter(item); /* Utilise le compteur pour afficher le numéro */
+  counter-increment: item; /* Incrémente le compteur à chaque élément */
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--primary);
+  justify-content: center;
+  border-radius: 10rem;
+  align-items: center;
+  color: var(--white);
+  font-size: 0.88638rem;
+  margin-left: -0.8rem;
+}
+
+.list__style {
+  display: flex;
+  height: 4.52369rem;
+  border-radius: 1.25rem;
+  background: var(--background, #F6F6F6);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  margin-bottom: 1.56rem;
+}
+.list__style .fa-solid {
+  padding-left: 1.42rem;
+}
+
+.list__text {
+  padding-left: 1.69rem;
+}
+
+.list__style--last {
+  margin-bottom: 4.25rem;
+}
+
+.grey {
+  color: var(--grey-tint-4);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.card {
+  display: block;
+  background: var(--white);
+  border-radius: 0.9375rem;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 1.12rem;
+  position: relative;
+}
+.card img {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 11.4375rem;
+}
+
+.card__new {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 5rem;
+  height: 1.8125rem;
+  position: absolute;
+  top: 0.81rem;
+  right: 0.75rem;
+  background-color: var(--green);
+  color: var(--green-font);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.125rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card__title {
+  padding-bottom: 0.31rem;
+}
+
+.card__content {
+  padding: 0.81rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #353535;
+  --grey-tint-4: #7E7E7E;
+  --button-gradient: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  --white: white;
+  --primary: #9356DC;
+  --background: #F6F6F6;
+  --green: #99E2D0;
+  --green-font: #008766;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: var(--grey);
+}/*# sourceMappingURL=base.css.map */

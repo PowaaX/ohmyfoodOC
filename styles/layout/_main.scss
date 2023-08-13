@@ -1,0 +1,58 @@
+.main__container {
+    width: 100%;
+
+    .main__content {
+        text-align: center;
+        padding: 2.44rem 3.62rem 0 2.63rem;
+
+    h2 {
+        height: 4.25rem;
+
+    }
+    }   
+}
+
+.main__p {
+    width: 19.6875rem;
+}
+
+.main__btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.69rem;
+    padding-bottom: 3.56rem;
+}
+
+.main__fonction {
+    background: var(--white);
+    width: 23.4375rem;
+    height: 27.5rem; 
+
+    h2 {
+        padding-left: 1.25rem;  
+        padding-top: 3rem;
+        padding-bottom: 1.62rem;
+    }
+
+}
+
+.main__restaurants {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+
+
+    h2 {
+        padding-top: 3.37rem;
+        padding-bottom: 1.62rem;
+    }
+}
+
+.main__card {
+    display: flex;
+
+}
+
+.restaurants__container {
+    margin: auto;
+}

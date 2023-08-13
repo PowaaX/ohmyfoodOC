@@ -1,0 +1,45 @@
+.list__content {
+    padding-left: 1.25rem;  
+    list-style: none; /* Supprime les puces de la liste */
+    counter-reset: item; /* Réinitialise le compteur pour les éléments */
+    width: 20.15538rem;
+    padding-left: 2.03rem;
+  }
+  
+  li::before {
+    display: flex;
+    content: counter(item); /* Utilise le compteur pour afficher le numéro */
+    counter-increment: item; /* Incrémente le compteur à chaque élément */
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--primary);
+    justify-content: center;
+    border-radius: 10rem;
+    align-items: center;
+    color: var(--white);
+    font-size: 0.88638rem;
+    margin-left: -0.8rem;
+
+  }
+
+.list__style {
+    display: flex;
+    height: 4.52369rem;
+    border-radius: 1.25rem;
+    background: var(--background, #F6F6F6);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    margin-bottom: 1.56rem;
+
+    .fa-solid {
+        padding-left: 1.42rem;
+    }
+}
+
+.list__text {
+    padding-left: 1.69rem;
+}
+
+.list__style--last {
+    margin-bottom: 4.25rem;
+}
