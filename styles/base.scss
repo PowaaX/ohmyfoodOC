@@ -4,6 +4,9 @@
 @import "./components/list";
 @import "./components/color";
 @import "./components/card";
+@import "./layout/footer";
+@import "./layout/nav";
+@import "./components/_menu-settings.scss";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap');$color1: #EAEAEA;
 
@@ -34,4 +37,8 @@ p {
     font-size: 1.125rem;
     color: var(--grey);
 
+}
+
+h1 {
+    font-family: Shrikhand;
 }
