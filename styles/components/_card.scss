@@ -1,6 +1,8 @@
+@import "../components/variables.scss";
+
 .card {
     display: block;
-    background: var(--white);
+    background: $white;
     border-radius: 0.9375rem;
     text-decoration: none;
     color: inherit;
@@ -28,8 +30,8 @@
     position: absolute;
     top: 0.81rem;
     right: 0.75rem;
-    background-color: var(--green);
-    color: var(--green-font);
+    background-color: $green;
+    color: $green-font;
     font-size: 0.875rem;
     font-weight: 500;
     border-radius: 0.125rem;

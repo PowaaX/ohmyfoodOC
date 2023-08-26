@@ -49,7 +49,7 @@
 }
 
 .main__fonction {
-  background: var(--white);
+  background: white;
   width: 23.4375rem;
   height: 27.5rem;
 }
@@ -78,7 +78,7 @@
 
 .btn {
   display: flex;
-  background: var(--button-gradient);
+  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
   color: white;
   border-radius: 1.5625rem;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -107,11 +107,11 @@ li::before {
   counter-increment: item; /* Incrémente le compteur à chaque élément */
   width: 1.5rem;
   height: 1.5rem;
-  background: var(--primary);
+  background: #9356DC;
   justify-content: center;
   border-radius: 10rem;
   align-items: center;
-  color: var(--white);
+  color: white;
   font-size: 0.88638rem;
   margin-left: -0.8rem;
 }
@@ -120,7 +120,7 @@ li::before {
   display: flex;
   height: 4.52369rem;
   border-radius: 1.25rem;
-  background: var(--background, #F6F6F6);
+  background: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   align-items: center;
   margin-bottom: 1.56rem;
@@ -138,16 +138,16 @@ li::before {
 }
 
 .grey {
-  color: var(--grey-tint-4);
+  color: #7E7E7E;
 }
 
 .primary {
-  color: var(--primary);
+  color: #9356DC;
 }
 
 .card {
   display: block;
-  background: var(--white);
+  background: white;
   border-radius: 0.9375rem;
   text-decoration: none;
   color: inherit;
@@ -171,8 +171,8 @@ li::before {
   position: absolute;
   top: 0.81rem;
   right: 0.75rem;
-  background-color: var(--green);
-  color: var(--green-font);
+  background-color: #99E2D0;
+  color: #008766;
   font-size: 0.875rem;
   font-weight: 500;
   border-radius: 0.125rem;
@@ -192,9 +192,8 @@ li::before {
 }
 
 footer {
-  width: 23.4375rem;
   padding: 1.375rem 1.5625rem;
-  background-color: var(--grey);
+  background-color: #353535;
   margin-top: 4.12rem;
 }
 
@@ -202,7 +201,7 @@ footer {
   width: 8.59888rem;
   font-size: 1.125rem;
   padding-bottom: 1rem;
-  color: var(--white);
+  color: white;
 }
 
 .footer__list__item {
@@ -212,7 +211,7 @@ footer {
 .footer__list__item__link {
   display: flex;
   text-decoration: none;
-  color: var(--white);
+  color: white;
 }
 
 footer ul li::before {
@@ -226,7 +225,7 @@ footer ul li::before {
 }
 
 .link__text {
-  color: var(--white);
+  color: white;
   padding-bottom: 0.44rem;
   justify-content: center;
 }
@@ -259,18 +258,7 @@ strong {
 .menu__container {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
-  background-color: var(--background);
-}
-
-:root {
-  --grey: #353535;
-  --grey-tint-4: #7E7E7E;
-  --button-gradient: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-  --white: white;
-  --primary: #9356DC;
-  --background: #F6F6F6;
-  --green: #99E2D0;
-  --green-font: #008766;
+  background-color: #F6F6F6;
 }
 
 * {
@@ -280,13 +268,13 @@ strong {
 }
 
 body {
-  background: var(--background);
+  background: #F6F6F6;
 }
 
 p {
   font-weight: 300;
   font-size: 1.125rem;
-  color: var(--grey);
+  color: #353535;
 }
 
 h1 {

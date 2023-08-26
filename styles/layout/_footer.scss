@@ -1,7 +1,6 @@
 footer {
-    width: 23.4375rem;
     padding: 1.375rem 1.5625rem;
-    background-color: var(--grey);
+    background-color: $grey;
     margin-top: 4.12rem;
 }
 
@@ -9,7 +8,7 @@ footer {
         width: 8.59888rem; 
         font-size: 1.125rem;
         padding-bottom: 1rem;
-        color: var(--white);
+        color: $white;
     }
 
 
@@ -20,7 +19,7 @@ footer {
 .footer__list__item__link {
     display: flex;
     text-decoration: none;
-    color: var(--white);
+    color: $white;
 }
 
 footer ul li::before {
@@ -34,7 +33,7 @@ footer ul li::before {
 }
 
 .link__text {
-    color: var(--white);
+    color: $white;
     padding-bottom: 0.44rem;
     justify-content: center;
 }

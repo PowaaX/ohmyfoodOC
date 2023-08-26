@@ -12,11 +12,11 @@
     counter-increment: item; /* Incrémente le compteur à chaque élément */
     width: 1.5rem;
     height: 1.5rem;
-    background: var(--primary);
+    background: $primary;
     justify-content: center;
     border-radius: 10rem;
     align-items: center;
-    color: var(--white);
+    color: $white;
     font-size: 0.88638rem;
     margin-left: -0.8rem;
 
@@ -26,7 +26,7 @@
     display: flex;
     height: 4.52369rem;
     border-radius: 1.25rem;
-    background: var(--background, #F6F6F6);
+    background: $background;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     align-items: center;
     margin-bottom: 1.56rem;

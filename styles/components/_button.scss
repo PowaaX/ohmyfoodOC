@@ -1,7 +1,9 @@
+@import "../components/variables.scss";
+
 .btn {
     display: flex;
-    background: var(--button-gradient);
-    color: white;
+    background: $button-gradient;
+    color: $white;
     border-radius: 1.5625rem;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     width: 13.625rem;

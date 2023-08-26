@@ -1,3 +1,4 @@
+@import "./components/variables";
 @import "./layout/header";
 @import "./layout/main";
 @import "./components/button";
@@ -8,18 +9,11 @@
 @import "./layout/nav";
 @import "./components/_menu-settings.scss";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap');$color1: #EAEAEA;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap');
 
-:root {
---grey: #353535;
---grey-tint-4: #7E7E7E;
---button-gradient: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
---white: white;
---primary: #9356DC;
---background: #F6F6F6;
---green: #99E2D0;
---green-font: #008766;
-}
+
+
+
 
 * {
     font-family: Roboto, sans-serif;
@@ -29,13 +23,13 @@
 }
 
 body {
-    background: var(--background);
+    background: $background;
 }
 
 p {
     font-weight: 300;
     font-size: 1.125rem;
-    color: var(--grey);
+    color: $grey;
 
 }
 
