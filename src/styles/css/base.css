@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
 .header__logo {
+  background: var(--white);
   width: 23.4375rem;
   height: 3.9375rem;
   position: relative;
