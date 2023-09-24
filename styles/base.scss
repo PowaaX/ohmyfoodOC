@@ -8,6 +8,7 @@
 @import "./layout/footer";
 @import "./layout/nav";
 @import "./components/_menu-settings.scss";
+@import "./components/icons";
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap');
 
@@ -19,6 +20,7 @@
     font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
 }
 
@@ -35,4 +37,9 @@ p {
 
 h1 {
     font-family: Shrikhand;
+}
+
+.center {
+    max-width: 1024px;
+    margin: auto;
 }

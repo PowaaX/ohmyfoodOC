@@ -8,3 +8,20 @@ $green: #99E2D0;
 $green-font: #008766;
 
 $color1: #EAEAEA;
+
+@keyframes animationMenu {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

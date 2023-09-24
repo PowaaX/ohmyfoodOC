@@ -8,6 +8,9 @@
     color: inherit;
     margin-bottom: 1.12rem;
     position: relative;
+    animation: animationMenu 0.6s;
+
+
 
 
     img {
@@ -45,7 +48,24 @@
 .card__content {
     padding: 0.81rem;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.card--last {
+  margin-bottom: 4.13rem;
+}
+
+@media (min-width: 1024px) {
+
+  .card--last {
+    margin-bottom: 1.12rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6.25rem;
+    row-gap: 3.12rem;
+}
 }

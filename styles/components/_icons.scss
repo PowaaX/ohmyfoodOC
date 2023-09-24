@@ -1,0 +1,42 @@
+.restaurants_icons {
+    position: absolute;
+    bottom: 1.9rem;
+    right: 2.3rem;
+    width: 26px;
+    margin-top: -20px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 25px;
+  }
+  .icons input[type=checkbox]:checked ~ .icons-liked {
+    display: inline-block;
+    opacity: 1;
+  }
+  .icons input[type=checkbox]:checked ~ .icons-notLiked {
+    display: none;
+  }
+
+
+  .icons:hover .icons-liked {
+    opacity: 1;
+  }
+  .icons-notLiked {
+    position: absolute;
+  }
+  .icons-liked {
+    position: relative;
+    background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 200ms ease-in-out;
+    opacity: 0;
+  }
+
+input[type=checkbox] {
+    display: none;
+}

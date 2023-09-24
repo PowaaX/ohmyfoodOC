@@ -1,19 +1,15 @@
 .main__container {
-    width: 100%;
+    width: auto;
 
     .main__content {
         text-align: center;
         padding: 2.44rem 3.62rem 0 2.63rem;
-
-    h2 {
-        height: 4.25rem;
-
-    }
     }   
 }
 
 .main__p {
-    width: 19.6875rem;
+    width: auto;
+    padding-top: 1rem;
 }
 
 .main__btn {
@@ -25,7 +21,6 @@
 
 .main__fonction {
     background: $white;
-    width: 23.4375rem;
     height: 27.5rem; 
 
     h2 {
@@ -55,4 +50,24 @@
 
 .restaurants__container {
     margin: auto;
+    
+}
+
+.main__menu {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+@media (min-width: 1024px) {
+
+    .main__p {
+        width: auto;
+    }
+
+    .main__fonction {
+        width: auto;
+        height: auto;    
+    }
+
 }
