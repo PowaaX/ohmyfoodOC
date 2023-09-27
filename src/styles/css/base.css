@@ -387,7 +387,6 @@ strong {
 @media (min-width: 1024px) {
   footer {
     padding-top: 2rem;
-    height: 4.125rem;
   }
   .footer__title {
     width: 8.6875rem;
@@ -399,6 +398,7 @@ strong {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding-right: 6rem;
   }
   .footer__list {
     display: flex;
@@ -642,12 +642,12 @@ strong {
   .menu__header h2 {
     padding-right: 1.5rem;
   }
-  .container {
-    width: 175rem;
-  }
   .submenus {
     width: 50%;
     margin: auto;
+  }
+  .menu {
+    width: 65.9375rem;
   }
 }
 .restaurants_icons {
