@@ -15,8 +15,11 @@
   }
 }
 @keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
   to {
-    transform: rotate(1turn);
+    transform: rotate(0deg);
   }
 }
 @keyframes loading {
@@ -46,7 +49,7 @@
   width: 100px;
   height: 100px;
   background: conic-gradient(#9356DC, #FF79DA, #9356DC);
-  animation: spin 1s linear infinite;
+  animation: spin 2s linear;
 }
 
 .header__home {
@@ -159,8 +162,11 @@
   }
 }
 @keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
   to {
-    transform: rotate(1turn);
+    transform: rotate(0deg);
   }
 }
 @keyframes loading {
@@ -267,8 +273,11 @@
   }
 }
 @keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
   to {
-    transform: rotate(1turn);
+    transform: rotate(0deg);
   }
 }
 @keyframes loading {
@@ -650,50 +659,41 @@ strong {
     width: 65.9375rem;
   }
 }
-.restaurants_icons {
-  position: absolute;
-  bottom: 1.9rem;
-  right: 2.3rem;
-  width: 26px;
-  margin-top: -20px;
+.card__heart {
+  font-size: 24px;
 }
 
-.icons {
+.btn__heart {
+  padding-right: 1.56rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  font-size: 25px;
 }
-
-.icons input[type=checkbox]:checked ~ .icons-liked {
-  display: inline-block;
-  opacity: 1;
-}
-
-.icons input[type=checkbox]:checked ~ .icons-notLiked {
-  display: none;
-}
-
-.icons:hover .icons-liked {
-  opacity: 1;
-}
-
-.icons-notLiked {
+.btn__heart--outline {
   position: absolute;
 }
-
-.icons-liked {
-  position: relative;
+.btn__heart--solid {
+  position: absolute;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  color: transparent;
+  transform: scale(0);
+  transition: transform 300ms;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.btn__heart:hover {
+  cursor: pointer;
+}
+.btn__heart:hover .btn__heart--solid {
+  transform: scale(1);
+}
+.btn__heart:hover .btn__heart--outline {
   background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 200ms ease-in-out;
   opacity: 0;
-}
-
-input[type=checkbox] {
-  display: none;
 }
 
 * {

@@ -6,8 +6,17 @@ $primary: #9356DC;
 $background: #F6F6F6;
 $green: #99E2D0;
 $green-font: #008766;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
 
 $color1: #EAEAEA;
+
+
+@mixin flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @keyframes animationMenu {
     0% {
@@ -27,10 +36,15 @@ $color1: #EAEAEA;
 }
 
 @keyframes spin {
-    to {
-      transform: rotate(1turn);
+    from {
+        transform: rotate(360deg);
     }
-  }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
 
 @keyframes loading {
     0% {

@@ -11,22 +11,20 @@
 
     <title>P4</title>
   </head>
-  <div class="loader__container">
-    <div class="loader"></div>
-  </div>
-  <header class="header__home">
-    <div class="header__logo">
-      <h1 class="header__title">ohmyfood</h1>
+  <body>
+    <div class="loader__container">
+      <div class="loader"></div>
+    </div>
+    <header class="header__home">
+      <div class="header__logo">
+        <h1 class="header__title">ohmyfood</h1>
+      </div>
+    </header>
+    <div class="location">
+      <i class="fa-solid fa-location-dot"></i>
+      <span class="header__text">Paris, Belleville</span>
     </div>
 
-    
-  </header>
-  <div class="location">
-    <i class="fa-solid fa-location-dot"></i>
-    <span class="header__text">Paris, Belleville</span>
-  </div>
-  <body>
-    
     <main>
       <div class="main__container">
         <section class="main__content">
@@ -44,7 +42,7 @@
             <ol class="list__content">
               <li class="list__style">
                 <p class="number">1</p>
-                <i class="fa-solid fa-mobile-screen-button grey"></i>       
+                <i class="fa-solid fa-mobile-screen-button grey"></i>
                 <span class="list__text">Choisissez un restaurant</span>
               </li>
               <li class="list__style">
@@ -75,16 +73,10 @@
                     <h3 class="card__title">La palette du goût</h3>
                     <p class="card__subtitle">Ménilmontant</p>
                   </div>
-                  <label class="restaurants__icons icons">
-                    <input
-                      type="checkbox"
-                      id="restaurant1"
-                      name="restaurant-liked"
-                      value="1"
-                    />
-                    <i class="fa-regular fa-heart icons-notLiked"></i>
-                    <i class="fa-solid fa-heart icons-liked"></i>
-                  </label>
+                  <div class="card__heart btn__heart">
+                    <i class="fa-regular fa-heart btn__heart--outline"></i>
+                    <i class="fa-solid fa-heart btn__heart--solid"></i>
+                  </div>
                 </div>
               </a>
 
@@ -99,16 +91,10 @@
                     <h3 class="card__title">La note enchantée</h3>
                     <p class="card__subtitle">Charonne</p>
                   </div>
-                  <label class="restaurants__icons icons">
-                    <input
-                      type="checkbox"
-                      id="restaurant1"
-                      name="restaurant-liked"
-                      value="1"
-                    />
-                    <i class="fa-regular fa-heart icons-notLiked"></i>
-                    <i class="fa-solid fa-heart icons-liked"></i>
-                  </label>
+                  <div class="card__heart btn__heart">
+                    <i class="fa-regular fa-heart btn__heart--outline"></i>
+                    <i class="fa-solid fa-heart btn__heart--solid"></i>
+                  </div>
                 </div>
               </a>
 
@@ -123,20 +109,17 @@
                     <h3 class="card__title">À la française</h3>
                     <p class="card__subtitle">Cité Rouge</p>
                   </div>
-                  <label class="restaurants__icons icons">
-                    <input
-                      type="checkbox"
-                      id="restaurant1"
-                      name="restaurant-liked"
-                      value="1"
-                    />
-                    <i class="fa-regular fa-heart icons-notLiked"></i>
-                    <i class="fa-solid fa-heart icons-liked"></i>
-                  </label>
+                  <div class="card__heart btn__heart">
+                    <i class="fa-regular fa-heart btn__heart--outline"></i>
+                    <i class="fa-solid fa-heart btn__heart--solid"></i>
+                  </div>
                 </div>
               </a>
 
-              <a class="delay-3 card card--last" href="./pages/le-delice-des-sens.html">
+              <a
+                class="delay-3 card card--last"
+                href="./pages/le-delice-des-sens.html"
+              >
                 <div class="card__new">Nouveau</div>
                 <img
                   src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -147,16 +130,11 @@
                     <h3 class="card__title">Le délice des sens</h3>
                     <p class="card__subtitle">Folie-Méricourt</p>
                   </div>
-                  <label class="restaurants__icons icons">
-                    <input
-                      type="checkbox"
-                      id="restaurant1"
-                      name="restaurant-liked"
-                      value="1"
-                    />
-                    <i class="fa-regular fa-heart icons-notLiked"></i>
-                    <i class="fa-solid fa-heart icons-liked"></i>
-                  </label>
+
+                  <div class="card__heart btn__heart">
+                    <i class="fa-regular fa-heart btn__heart--outline"></i>
+                    <i class="fa-solid fa-heart btn__heart--solid"></i>
+                  </div>
                 </div>
               </a>
             </div>
@@ -195,7 +173,7 @@
           <li class="footer__list__item">
             <a
               class="footer__list__item__link"
-              href="mailto:william.farre@gmail.com"
+              href="mailto:contact@ohmyfood.com"
             >
               <p class="link__text">Contact</p>
             </a>
