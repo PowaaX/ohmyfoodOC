@@ -1,21 +1,29 @@
 .loader__container {
-    background-color: rgba(255, 255, 255, 0.9);
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: loading 0.2s 3s forwards;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loading 0.2s 3s forwards;
 }
 
-
 .loader {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background: conic-gradient(#9356DC, #FF79DA, #9356DC);
+  font-size: 5rem;
+  transform: scale(1);
+  background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 150px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: spin 2s linear;
+
+  .fa-utensils {
+    color: $white;
+  }
 }

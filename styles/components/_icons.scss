@@ -7,7 +7,7 @@
 //     top: 0;
 //     right: 0;
 //   }
-  
+
 //   .icons {
 //     display: flex;
 //     justify-content: flex-end;
@@ -21,7 +21,6 @@
 //   .icons input[type=checkbox]:checked ~ .icons-notLiked {
 //     display: none;
 //   }
-
 
 //   .icons:hover .icons-liked {
 //     opacity: 1;
@@ -43,7 +42,6 @@
 //     display: none;
 // }
 
-
 .card__heart {
   font-size: 24px;
 }
@@ -53,39 +51,40 @@
   @include flex__center;
 
   &--outline {
-      position: absolute; 
+    position: absolute;
   }
 
   &--solid {
-      position: absolute;
-      background: linear-gradient(180deg, $color-primary 0%, $color-secondary 100%);
-      color: transparent;
-      transform: scale(0);
-      transition: transform 300ms;
+    position: absolute;
+    background: linear-gradient(
+      180deg,
+      $color-primary 0%,
+      $color-secondary 100%
+    );
+    color: transparent;
+    transform: scale(0);
+    transition: transform 300ms;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .btn__heart--solid {
+      transform: scale(1);
+    }
+    .btn__heart--outline {
+      background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
       background-clip: text;
       -webkit-background-clip: text;
-      
-  }
-  
-  &:hover {
-      cursor: pointer;
- 
-      .btn__heart--solid {
-          transform: scale(1);
-      }
-      .btn__heart--outline {
-        background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: opacity 200ms ease-in-out;
-        opacity: 0;
-      }
+      -webkit-text-fill-color: transparent;
+      transition: opacity 200ms ease-in-out;
+      opacity: 0;
+    }
   }
 }
 
 .left__heart {
   padding-left: 1.5rem;
-
 }
-

@@ -15,11 +15,16 @@
   }
 }
 @keyframes spin {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
+  0% {
     transform: rotate(0deg);
+    opacity: 0%;
+  }
+  50% {
+    opacity: 15%;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 100%;
   }
 }
 @keyframes loading {
@@ -45,11 +50,19 @@
 }
 
 .loader {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background: conic-gradient(#9356DC, #FF79DA, #9356DC);
+  font-size: 5rem;
+  transform: scale(1);
+  background: linear-gradient(160deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 150px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: spin 2s linear;
+}
+.loader .fa-utensils {
+  color: white;
 }
 
 .header__home {
@@ -79,7 +92,7 @@
   height: 3.125rem;
   display: flex;
   align-items: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   justify-content: center;
 }
 .location span {
@@ -162,11 +175,16 @@
   }
 }
 @keyframes spin {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
+  0% {
     transform: rotate(0deg);
+    opacity: 0%;
+  }
+  50% {
+    opacity: 15%;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 100%;
   }
 }
 @keyframes loading {
@@ -180,7 +198,7 @@
 }
 .btn {
   display: flex;
-  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(175deg, #9356dc 0%, #ff79da 100%);
   color: white;
   border-radius: 1.5625rem;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -190,9 +208,10 @@
   align-items: center;
   border: none;
   font-size: 1rem;
+  cursor: pointer;
 }
 .btn:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(182deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(182deg, #9356dc 0%, #ff79da 100%);
 }
 
 .list__content {
@@ -207,7 +226,7 @@
   display: flex;
   width: 1.5rem;
   height: 1.5rem;
-  background: #9356DC;
+  background: #9356dc;
   justify-content: center;
   border-radius: 10rem;
   align-items: center;
@@ -220,7 +239,7 @@
   display: flex;
   height: 4.52369rem;
   border-radius: 1.25rem;
-  background: #F6F6F6;
+  background: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   align-items: center;
   margin-bottom: 1.56rem;
@@ -251,11 +270,11 @@
   }
 }
 .grey {
-  color: #7E7E7E;
+  color: #7e7e7e;
 }
 
 .primary {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 @keyframes animationMenu {
@@ -273,11 +292,16 @@
   }
 }
 @keyframes spin {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
+  0% {
     transform: rotate(0deg);
+    opacity: 0%;
+  }
+  50% {
+    opacity: 15%;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 100%;
   }
 }
 @keyframes loading {
@@ -316,7 +340,7 @@
   position: absolute;
   top: 0.81rem;
   right: 0.75rem;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #008766;
   font-size: 0.875rem;
   font-weight: 500;
@@ -460,7 +484,7 @@ strong {
 .menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   position: relative;
 }
 
@@ -508,7 +532,7 @@ strong {
 
 .menu__like {
   transition-duration: 0.25s;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -519,7 +543,8 @@ strong {
   opacity: 0;
 }
 
-.menu__btn:before, .menu__like {
+.menu__btn:before,
+.menu__like {
   position: absolute;
   top: 0;
   left: 0;
@@ -570,7 +595,8 @@ strong {
 .submenus .menuItem__header {
   flex: 1;
 }
-.submenus .menuItem__header, .submenus .menuItem__title {
+.submenus .menuItem__header,
+.submenus .menuItem__title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -674,7 +700,7 @@ strong {
 }
 .btn__heart--solid {
   position: absolute;
-  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(180deg, #9356dc 0%, #ff79da 100%);
   color: transparent;
   transform: scale(0);
   transition: transform 300ms;
@@ -708,7 +734,7 @@ strong {
 }
 
 body {
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 p {

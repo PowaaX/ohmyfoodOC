@@ -1,57 +1,61 @@
 $grey: #353535;
-$grey-tint-4: #7E7E7E;
-$button-gradient: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+$grey-tint-4: #7e7e7e;
+$button-gradient: linear-gradient(175deg, #9356dc 0%, #ff79da 100%);
 $white: white;
-$primary: #9356DC;
-$background: #F6F6F6;
-$green: #99E2D0;
+$primary: #9356dc;
+$background: #f6f6f6;
+$green: #99e2d0;
 $green-font: #008766;
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
 
-$color1: #EAEAEA;
-
+$color1: #eaeaea;
 
 @mixin flex__center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes animationMenu {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
 
-    50% {
-        transform: scale(1.1);
-        opacity: 0.7;
-    }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
 
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes spin {
-    from {
-        transform: rotate(360deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 15%;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 100%;
+  }
 }
 
-
-
 @keyframes loading {
-    0% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-        visibility: hidden;
-    }
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
 }
